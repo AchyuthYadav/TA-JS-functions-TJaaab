@@ -19,8 +19,8 @@ function sayHello(){
 function fullName(){
   let firstName = prompt(`enter your first name`)
   let lastName = prompt(`Enter your last name`)
-  let fullName = (firstName+lastName)
-  alert(`${fullName}`)
+  let full = (firstName+lastName)
+  alert(`${fulL}`)
 
 }
 
@@ -64,10 +64,10 @@ function addTwoNumbers(){
 
 function getTable(){
   let n = +prompt(`Enter a number`)
-  for(let i = 1 ; i < 10 ; i++){
-    console.log(`${n} * ${i} = ${i*n}`)
+  for(let i = 1 ; i <= 10 ; i++){
+    console.log(`${n} * ${i} = ${n*i}`)
   }
-}
+} 
 
 
 
@@ -79,10 +79,17 @@ function getTable(){
 
 */
 
-function isLeapYear() {
-  let year = prompt(`enter a year`)
-alert(``)
-
+function isLeapYear(){
+  let year = prompt(`enter a year`);
+  if(year % 400 == 0){
+    alert(`${year} is a leap year`)
+  }else if(year % 100 == 0){
+    alert(`${year} is not leap year`)
+  }else if(year % 4 === 0){
+    alert(`${year} is a leap year`)
+  }else{
+    alert(`${year} is not leap year`)
+  }   
 }
 
 
@@ -96,6 +103,7 @@ alert(``)
 */
 
 function getFactorial(){
-let number = +prompt(`enter a number`)
-alert(`The factorial of ${number} is factorial`)
+let num = +prompt(`enter a number`)
+ for(let i = num ; i <= 1 ; i--)
+alert(`The factorial of ${num } is factorial`)
 }
