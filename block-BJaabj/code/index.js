@@ -94,6 +94,7 @@ function isLeapYear(){
 
 
 
+
 /*
 6. Create a function named `getFactorial` with the following steps:
 
