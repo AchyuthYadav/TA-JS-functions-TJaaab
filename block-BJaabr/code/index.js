@@ -251,24 +251,21 @@ Do the following with above problem.
       }
     }
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
-      const oddOrEven = (number) => 
-      if(number % 2 === 0){
-        return(`Number is even`)
-      }else{
-        return(`Number is odd`)
-      }
+      let oddOrEven = (number) => number % 2 === 0 ?  `Number is even` : `Number is odd`;
 
 // - Write an Arrow Function with curly brackets
-       const oddOrEven = function oddOrEven(number){
-      if(number % 2 === 0){
-        return(`Number is even`)
+      const oddOrEven = (number) => {
+        if(number % 2 === 0){
+          return(`Number is even`)
       }else{
-        return(`Number is odd`)
+        return(`Number is odd`) 
       }
-      }
+    }
 // - Execute the function
-      const 
+      oddOrEven()
 
 // - Execute the function and store the return value in a variable
+      const returnValue = oddOrEven()
 
 // - What is the typeof returnValue
+      // typeof returnValue "number"
