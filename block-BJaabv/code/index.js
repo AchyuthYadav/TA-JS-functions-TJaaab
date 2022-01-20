@@ -8,8 +8,10 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
+function calculateDogAge(age) {
   // Your code goes here
+    dogYears = 7 * age ;
+    return(dogYears)
 }
 
 /*
@@ -19,8 +21,9 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
+function calculateMoviesToWatch(age, movies) {
   // Your code goes here
+
 }
 
 /*
@@ -31,6 +34,8 @@ function calculateMoviesToWatch() {
 
 function celsiusToFahrenheit() {
   // Your code goes here
+  celsiusInF = (celsius*9)/5 + 32;
+  console.log(celsius + '°C is ' + celsiusInF + '°F');
 }
 
 /*
@@ -41,7 +46,10 @@ function celsiusToFahrenheit() {
 
 function celsiusToFahrenheit() {
   // Your code goes here
+  fahrenheitInC = ((fahrenheit - 32)*5)/9;
+  console.log(fahrenheit + '°F is ' + fahrenheitInC + '°C');
 }
+
 
 /*
 5. 🎖 Write a function pow(n, x) that returns x in power n.
@@ -51,8 +59,13 @@ function celsiusToFahrenheit() {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
+function pow(n, x) {
   // Your code goes here
+    if(n <= 0 ){
+      return "The number below 1 is not allowed";
+    }else{
+    return n ** x;
+    } 
 }
 
 // Test
@@ -66,9 +79,13 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
+function sumOrProductOfN(number, operation) {
   // Your code goes here
-}
+
+  if(operation === `sum` ){
+    for(let i =  )
+      
+} 
 
 sumOrProductOfN(4, 'sum'); // 10
 sumOrProductOfN(4, 'product'); // 24
@@ -78,8 +95,12 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
 
-function sumOfN() {
+function sumOfN(n) {
   // Your code goes here
+  for(let i = 1; i <= n; i++)
+  result += sumOfN(i);
+
+  return result;
 }
 
 /*
