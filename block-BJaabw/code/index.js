@@ -10,10 +10,14 @@ minToSec(13) ➞ 780
 minToSec(2) ➞ 120
 */
 
+
 // - Write a Function Decleration for above problem
-function minToSec() {
+function minToSec(minutes) {
   // Your code
+  return minutes * 60;
 }
+convert(minutes)
+
 // - Execute the function with required parameter
 
 /* 2. 
@@ -25,10 +29,19 @@ isInRange(1, 20, 9); // true
 isInRange(1, 10, 19); // false
 */
 
+
+
+
+
+
 // - Write a Function Decleration for above problem
-function isInRange() {
+
+function isInRange(x, min, max){
   // Your code
+     ((x-min)*(x-max) <= 0)
+      return(true)
 }
+
 // - Execute the function with required parameter
 
 /* 2. calculateBMI
@@ -51,6 +64,7 @@ Obese: BMI is 30 or more
 
 function calculateBMI() {
   // Your code
+
 }
 
 /* 3. appropiateDrinks
