@@ -36,13 +36,12 @@ isInRange(1, 10, 19); // false
 
 // - Write a Function Decleration for above problem
 
-function isInRange(x, min, max){
+function isInRange(lowe, upper, number){
   // Your code
-     ((x-min)*(x-max) <= 0)
-      return(true)
+     return number > lower && number < higher ;
 }
-
 // - Execute the function with required parameter
+isInRange(1, 2, 1)
 
 /* 2. calculateBMI
 
@@ -62,13 +61,27 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
+function calculateBMI(weight, height) {
   // Your code
+  let bmi = weight /(height * height)
+  switch (true){
+
+    case bmi > 18.5 :
+      return"underweight"
+    case bmi > 18.5 && bmi < 24.9:
+      return "normal"
+    case bmi > 25 && bmi < 29.9:
+      return"overweight"
+    case bmi > 30:
+      return"obesity"
+    default:
+        alert("enter valid input")
+  }
 
 }
 
 /* 3. appropiateDrinks
-
+ 
 Create a function that take the age are return the appropiate drink based on these conditions:
 
 - Under 14 years old — return "drink fruit juice"
@@ -78,9 +91,22 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
+function appropiateDrinks(age) {
   // Your code
+  switch (true){
+    case age < 14:
+      return"drink fruit juice"
+    case age < 18:
+      return "drink soda"
+    case age <21:
+      return"drink fruit-flavored beer"
+    case bmi > 21:
+      return"drink throat-piercing vodka"
+    default:
+        alert("enter valid input")
+  }
 }
+
 
 /* 4. Add two numers or string
 
@@ -93,8 +119,15 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
+function sum(val1, val2) {
   // Your code
+  if(typeof val1 == "number" &&  typeof val2 == "number"){
+    return val1 + val2;
+  }else if(typeof val1 == "String" && typeof val2 == "string"){
+    return val1 + vql2;
+  }else {
+    return `enter valid input`
+  }
 }
 
 // Function Test
